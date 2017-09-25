@@ -1,0 +1,53 @@
+/*==================  GOOGLE MAP  ======================*/
+/*
+* @section Variables
+*/
+/*
+* @subsection Fonts
+*/
+/*
+* @subsection Colors
+*/
+/*
+* @subsection Screen sizes
+*/
+/*
+* @subsection Border radius
+*/
+/*
+* @subsection Shadows
+*/
+.map_model img {
+  max-width: none !important;
+}
+.map_locations {
+  display: none;
+}
+
+.map-md .map_model {
+  height: 200px;
+}
+@media (min-width: 768px) {
+  .map-md .map_model {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .map-md .map_model {
+    height: 400px;
+  }
+}
+
+.map-lg .map_model {
+  height: 200px;
+}
+@media (min-width: 768px) {
+  .map-lg .map_model {
+    height: 330px;
+  }
+}
+@media (min-width: 992px) {
+  .map-lg .map_model {
+    height: 580px;
+  }
+}

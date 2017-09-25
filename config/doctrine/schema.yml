@@ -1,0 +1,41 @@
+Adverture:
+  actAs: 
+    Timestampable: ~
+  columns:
+    title:                 { type: string(160), notnull: true }   
+    short_description:     { type: string(500), notnull: true }   
+    body:                  { type: clob(16777215), notnull: true }        
+  relations: 
+    Advertiser:            { local: user_id, foreign: id, type: one, onDelete: CASCADE }         
+    JobCategory:           { local: job_category_id, foreign: id, type: one, onDelete: CASCADE }   
+News:
+  actAs:
+    Timestampable: ~
+  columns:
+    title:                 { type: string(160), notnull: true } 
+    short_description:     { type: string(500), notnull: true }
+    body:                  { type: clob(16777215), notnull: true }        
+# Humuusiin setgegdel
+Testimonial:
+  actAs:
+    Timestampable: ~
+  columns: 
+    name:                  { type: string(255), notnull: true }
+    description:           { type: string(1000), notnull: true }
+    
+Galary:
+  actAs: 
+    Timestampable: ~
+  columns: 
+    name:                  { type: string(255), notnull: true }
+    title:                 { type: string(160), notnull: true }
+    
+Contact:
+  actAs: 
+    Timestampable: ~
+  columns:
+    name:                  { type: string(255), notnull: true }
+    email:                 { type: string(255), notnull: true }  
+    phone:                 { type: string(20), notnull: true }
+    body:                  { type: clob(16777215), notnull: true } 
+    
